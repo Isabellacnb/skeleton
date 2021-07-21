@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
     { name: "ejs", url: "https://ejs.co" },
     { name: "expressjs", url: "https://expressjs.com" },
   ];
-  var isAdmin = false;
+  var isAdmin = true;
 
   res.render("pages/admin", { title: "Admin", items, isAdmin });
   //res.send("Bienvenido a Admin");
